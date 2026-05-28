@@ -1,7 +1,5 @@
 - name: Debug Test
         run: |
-          echo "DİAQNOSTİKA BAŞLADI"
-          ping -c 4 google.com || echo "İnternetə çıxış qadağandır"
-          echo "SİSTEM MƏLUMATI:"
+          echo "DIAGNOSTIC START"
           uname -a
-          echo "--- MƏLUMAT SONU ---"
+          ping -c 2 google.com
